@@ -1,0 +1,22 @@
+{
+  "featured_repos": [
+    {"name": "deciduous", "description_override": null},
+    {"name": "blog", "description_override": "My personal blog & creative playground - built with Phoenix LiveView"},
+    {"name": "phstats", "description_override": null}
+  ],
+  "artsy_projects": [
+    {"label": "Generative Art", "url": "https://www.bobbby.online/generative-art"},
+    {"label": "Bezier Triangles", "url": "https://www.bobbby.online/bezier-triangles"},
+    {"label": "Gay Chaos", "url": "https://www.bobbby.online/gay_chaos"},
+    {"label": "A Me Museum", "url": "https://www.bobbby.online/museum"},
+    {"label": "Pong", "url": "https://www.bobbby.online/pong"},
+    {"label": "Chaos Typing", "url": "https://www.bobbby.online/chaos-typing"},
+    {"label": "Wordle", "url": "https://www.bobbby.online/wordle"}
+  ],
+  "bluesky_did": "did:plc:6e6n5nhhy7s2zqr7wx4s6p52",
+  "bluesky_handle": "bobbby.online",
+  "bluesky_max_scan": 200,
+  "blog_repo": "notactuallytreyanastasio/blog",
+  "blog_base_url": "https://www.bobbby.online",
+  "github_username": "notactuallytreyanastasio"
+}
