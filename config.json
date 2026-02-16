@@ -1,9 +1,9 @@
 {
-  "hero_repo": {
-    "name": "deciduous",
-    "blurb": "Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer."
-  },
   "featured_repos": [
+    {
+      "name": "deciduous",
+      "blurb": "Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer."
+    },
     {
       "name": "bobby_posts",
       "blurb": "Generate posts in my voice using pure Elixir Qwen3-8B-4bit inference on Apple Silicon. Part of a bigger ecosystem: [bumblebee_quantized](https://github.com/notactuallytreyanastasio/bumblebee_quantized) (4-bit LLM inference), [safetensors_ex](https://github.com/notactuallytreyanastasio/safetensors_ex) (model weight parser), [bobby_posts_adapters](https://github.com/notactuallytreyanastasio/bobby_posts_adapters) (LoRA weights), [elixir_mlx_nif_qwen3](https://github.com/notactuallytreyanastasio/elixir_mlx_nif_qwen3) (MLX NIF bridge), and [bluesky_bot_python](https://github.com/notactuallytreyanastasio/bluesky_bot_python) (auto-poster)"

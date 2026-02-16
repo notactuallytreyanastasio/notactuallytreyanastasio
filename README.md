@@ -6,12 +6,6 @@ Makin' silly & frivolous stuff, usually with software.
 
 ---
 
-<!-- hero starts -->
-## [deciduous](https://github.com/notactuallytreyanastasio/deciduous) `HTML` :star: 86
-
-Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer.
-<!-- hero ends -->
-
 ## Tech Threads (Bluesky)
 <!-- bluesky starts -->
 - [This is a test. I am going to start having tech threads include a computer emoji to make them show up as pinned pieces of my GitHub profile. Here I will talk about all the goofy stuff I did to build phstats, my new phish music stats / listening / exploration site.  💻](https://bsky.app/profile/bobbby.online/post/3mexa37izas2y)
@@ -21,6 +15,7 @@ Decision graph tooling for AI-assisted development. Track every choice, query yo
 <!-- featured starts -->
 | Project | Description |
 | --- | --- |
+| [**deciduous**](https://github.com/notactuallytreyanastasio/deciduous) `HTML` &nbsp; :star: 86 | Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer. |
 | [**bobby_posts**](https://github.com/notactuallytreyanastasio/bobby_posts) `Elixir` &nbsp; :star: 1 | Generate posts in my voice using pure Elixir Qwen3-8B-4bit inference on Apple Silicon. Part of a bigger ecosystem: [bumblebee_quantized](https://github.com/notactuallytreyanastasio/bumblebee_quantized) (4-bit LLM inference), [safetensors_ex](https://github.com/notactuallytreyanastasio/safetensors_ex) (model weight parser), [bobby_posts_adapters](https://github.com/notactuallytreyanastasio/bobby_posts_adapters) (LoRA weights), [elixir_mlx_nif_qwen3](https://github.com/notactuallytreyanastasio/elixir_mlx_nif_qwen3) (MLX NIF bridge), and [bluesky_bot_python](https://github.com/notactuallytreyanastasio/bluesky_bot_python) (auto-poster) |
 | [**genstage_tutorial_2025**](https://github.com/notactuallytreyanastasio/genstage_tutorial_2025) `Elixir` &nbsp; :star: 70 | A comprehensive GenStage tutorial and reference implementation in Elixir. Walks through building a real data processing pipeline from scratch. |
 | [**phstats**](https://github.com/notactuallytreyanastasio/phstats) `TypeScript` | Interactive Phish setlist statistics browser. Pulls data from phish.net, lets you explore jam charts, song frequency, and show history. Built with vanilla JS + GitHub Pages. |
