@@ -14,7 +14,7 @@ Decision graph tooling for AI-assisted development. Track every choice, query yo
 
 ## Tech Threads (Bluesky)
 <!-- bluesky starts -->
-- [This is a test. I am going to start having tech threads include a computer emoji to make them show up as pinned pieces of my GitHub profile. Here I will talk about all the goofy stuff I did to build p...](https://bsky.app/profile/bobbby.online/post/3mexa37izas2y)
+- [This is a test. I am going to start having tech threads include a computer emoji to make them show up as pinned pieces of my GitHub profile. Here I will talk about all the goofy stuff I did to build phstats, my new phish music stats / listening / exploration site.  💻](https://bsky.app/profile/bobbby.online/post/3mexa37izas2y)
 <!-- bluesky ends -->
 
 ## Featured Projects

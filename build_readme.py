@@ -155,9 +155,7 @@ def fetch_bluesky_threads(config):
             if COMPUTER_EMOJI in text:
                 uri = post.get("uri", "")
                 rkey = uri.split("/")[-1] if "/" in uri else ""
-                preview = text[:200].replace("\n", " ")
-                if len(text) > 200:
-                    preview += "..."
+                preview = text.replace("\n", " ")
                 link = f"https://bsky.app/profile/{handle}/post/{rkey}"
                 threads.append(f"- [{preview}]({link})")
 
