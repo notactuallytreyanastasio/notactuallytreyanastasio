@@ -8,6 +8,7 @@ Makin' silly & frivolous stuff, usually with software.
 
 ## Tech Threads (Bluesky)
 <!-- bluesky starts -->
+- [tech people: which would you rather read a long read post about  1) the journey of adding 4 bit quantization to elixir ML stuff (along w/bare metal GPU support for apple silicon) to the ecosystem libraries so that I could make a bot post like me  2) the process of how I've been building deciduous  💻](https://bsky.app/profile/bobbby.online/post/3mexiss3k4s2k)
 - [This is a test. I am going to start having tech threads include a computer emoji to make them show up as pinned pieces of my GitHub profile. Here I will talk about all the goofy stuff I did to build phstats, my new phish music stats / listening / exploration site.  💻](https://bsky.app/profile/bobbby.online/post/3mexa37izas2y)
 <!-- bluesky ends -->
 
@@ -20,6 +21,7 @@ Makin' silly & frivolous stuff, usually with software.
 | [**genstage_tutorial_2025**](https://github.com/notactuallytreyanastasio/genstage_tutorial_2025) `Elixir` &nbsp; :star: 70 | A comprehensive GenStage tutorial and reference implementation in Elixir. Walks through building a real data processing pipeline from scratch. |
 | [**phstats**](https://github.com/notactuallytreyanastasio/phstats) `TypeScript` | Interactive Phish setlist statistics browser. Pulls data from phish.net, lets you explore jam charts, song frequency, and show history. Built with vanilla JS + GitHub Pages. |
 | [**archive_tv**](https://github.com/notactuallytreyanastasio/archive_tv) `TypeScript` &nbsp; :star: 1 | The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection. |
+| [**role-call**](https://github.com/notactuallytreyanastasio/role-call) `TypeScript` | Find your next favorite TV show through the writers you love. Search by writer and discover everything they've worked on. |
 <!-- featured ends -->
 
 ## Recent Blog Posts

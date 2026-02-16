@@ -19,6 +19,10 @@
     {
       "name": "archive_tv",
       "blurb": "The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection."
+    },
+    {
+      "name": "role-call",
+      "blurb": "Find your next favorite TV show through the writers you love. Search by writer and discover everything they've worked on."
     }
   ],
   "artsy_projects": [
