@@ -256,11 +256,6 @@ Makin' silly & frivolous stuff, usually with software.
 {featured}
 <!-- featured ends -->
 
-## Weird stuff I make for fun when I cant sleep
-<!-- artsy starts -->
-{artsy}
-<!-- artsy ends -->
-
 ## Recent Blog Posts
 <!-- blog starts -->
 {blog}

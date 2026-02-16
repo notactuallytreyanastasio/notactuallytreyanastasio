@@ -27,16 +27,6 @@ Decision graph tooling for AI-assisted development. Track every choice, query yo
 | [**archive_tv**](https://github.com/notactuallytreyanastasio/archive_tv) `TypeScript` &nbsp; :star: 1 | The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection. |
 <!-- featured ends -->
 
-## Weird stuff I make for fun when I cant sleep
-<!-- artsy starts -->
-| | | | |
-| --- | --- | --- | --- |
-| [Generative Art](https://www.bobbby.online/generative-art) | [Bezier Triangles](https://www.bobbby.online/bezier-triangles) | [Gay Chaos](https://www.bobbby.online/gay_chaos) | [A Me Museum](https://www.bobbby.online/museum) |
-| [Pong](https://www.bobbby.online/pong) | [Chaos Typing](https://www.bobbby.online/chaos-typing) | [Wordle](https://www.bobbby.online/wordle) | [Blackjack](https://www.bobbby.online/blackjack) |
-| [War](https://www.bobbby.online/war) | [Nathan Fielder Character Analysis](https://www.bobbby.online/nathan) | [Lumon Celebration](https://www.bobbby.online/lumon-celebration) | [Stumble](https://www.bobbby.online/stumble) |
-| [Mirror](https://www.bobbby.online/mirror) | [Rainbow](https://www.bobbby.online/gay_chaos) | [Markdown Editor](https://www.bobbby.online/markdown-editor) |  |
-<!-- artsy ends -->
-
 ## Recent Blog Posts
 <!-- blog starts -->
 | | | |
