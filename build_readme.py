@@ -256,7 +256,7 @@ Makin' silly & frivolous stuff, usually with software.
 {featured}
 <!-- featured ends -->
 
-## Artsy & Weird Things I'm Making Now, Check Out the READMEs
+## Weird stuff I make for fun when I cant sleep
 <!-- artsy starts -->
 {artsy}
 <!-- artsy ends -->

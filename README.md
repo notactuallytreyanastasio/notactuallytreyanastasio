@@ -27,7 +27,7 @@ Decision graph tooling for AI-assisted development. Track every choice, query yo
 | [**archive_tv**](https://github.com/notactuallytreyanastasio/archive_tv) `TypeScript` &nbsp; :star: 1 | The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection. |
 <!-- featured ends -->
 
-## Artsy & Weird Things I'm Making Now, Check Out the READMEs
+## Weird stuff I make for fun when I cant sleep
 <!-- artsy starts -->
 | | | | |
 | --- | --- | --- | --- |
