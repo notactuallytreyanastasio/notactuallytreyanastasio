@@ -39,18 +39,17 @@ Decision graph tooling for AI-assisted development. Track every choice, query yo
 
 ## Recent Blog Posts
 <!-- blog starts -->
-- [327 Years Of Tree Law In The Usa ](https://www.bobbby.online/post/327-years-of-tree-law-in-the-usa-)
-- [A Genstage Tutorial And Reflection](https://www.bobbby.online/post/a-genstage-tutorial-and-reflection)
-- [Nathan Fielder](https://www.bobbby.online/post/nathan-fielder)
-- [A Quick Typewriter Set Letter Project](https://www.bobbby.online/post/a-quick-typewriter-set-letter-project)
-- [Lets Write Letters](https://www.bobbby.online/post/lets-write-letters)
+| | | |
+| --- | --- | --- |
+| [327 Years Of Tree Law In The Usa ](https://www.bobbby.online/post/327-years-of-tree-law-in-the-usa-) | [A Genstage Tutorial And Reflection](https://www.bobbby.online/post/a-genstage-tutorial-and-reflection) | [Nathan Fielder](https://www.bobbby.online/post/nathan-fielder) |
+| [A Quick Typewriter Set Letter Project](https://www.bobbby.online/post/a-quick-typewriter-set-letter-project) | [Lets Write Letters](https://www.bobbby.online/post/lets-write-letters) | [Whats My Schtick](https://www.bobbby.online/post/whats-my-schtick) |
 <!-- blog ends -->
 
 ## Recently Updated
 <!-- recent starts -->
-- [blog](https://github.com/notactuallytreyanastasio/blog) - my blog `Elixir`
-- [temper_rust_bug_maybe](https://github.com/notactuallytreyanastasio/temper_rust_bug_maybe)
-- [safe_httpeex](https://github.com/notactuallytreyanastasio/safe_httpeex) `Shell`
-- [rooted_in_good](https://github.com/notactuallytreyanastasio/rooted_in_good) - The Rooted in Good Method - Transform your relationship with your child through 3 simple daily touchpoints `TypeScript`
-- [live_draft_lsp](https://github.com/notactuallytreyanastasio/live_draft_lsp) - Elixir LSP that streams markdown to your Phoenix blog as you type in Zed `Elixir`
+| | | |
+| --- | --- | --- |
+| [blog](https://github.com/notactuallytreyanastasio/blog) `Elixir` | [temper_rust_bug_maybe](https://github.com/notactuallytreyanastasio/temper_rust_bug_maybe) | [safe_httpeex](https://github.com/notactuallytreyanastasio/safe_httpeex) `Shell` |
+| [rooted_in_good](https://github.com/notactuallytreyanastasio/rooted_in_good) `TypeScript` | [live_draft_lsp](https://github.com/notactuallytreyanastasio/live_draft_lsp) `Elixir` | [zed-live-draft](https://github.com/notactuallytreyanastasio/zed-live-draft) `Rust` |
+| [my_me_bot](https://github.com/notactuallytreyanastasio/my_me_bot) `Swift` | [heex-rs](https://github.com/notactuallytreyanastasio/heex-rs) `Rust` | [heex-lua](https://github.com/notactuallytreyanastasio/heex-lua) `Lua` |
 <!-- recent ends -->

@@ -107,12 +107,22 @@ def fetch_blog_posts(config):
             posts.append((date_str, slug))
 
     posts.sort(key=lambda x: x[0], reverse=True)
-    lines = []
-    for _, slug in posts[:5]:
+    cells = []
+    for _, slug in posts[:6]:
         title = slug.replace("-", " ").title()
         url = f"{config['blog_base_url']}/post/{slug}"
-        lines.append(f"- [{title}]({url})")
-    return "\n".join(lines) if lines else "_No blog posts found._"
+        cells.append(f"[{title}]({url})")
+    if not cells:
+        return "_No blog posts found._"
+    cols = 3
+    header = "| | | |\n| --- | --- | --- |"
+    rows = []
+    for i in range(0, len(cells), cols):
+        chunk = cells[i:i + cols]
+        while len(chunk) < cols:
+            chunk.append("")
+        rows.append("| " + " | ".join(chunk) + " |")
+    return header + "\n" + "\n".join(rows)
 
 
 def fetch_bluesky_threads(config):
@@ -174,7 +184,7 @@ def fetch_recent_repos(config):
     if r.status_code != 200:
         return "_Could not fetch repos._"
 
-    lines = []
+    cells = []
     for repo in r.json():
         if repo.get("fork"):
             continue
@@ -182,14 +192,22 @@ def fetch_recent_repos(config):
             continue
         if repo["name"] == config["github_username"]:
             continue
-        desc = repo.get("description") or ""
         lang = repo.get("language") or ""
-        suffix = f" `{lang}`" if lang else ""
-        desc_str = f" - {desc}" if desc else ""
-        lines.append(f"- [{repo['name']}]({repo['html_url']}){desc_str}{suffix}")
-        if len(lines) >= 5:
+        lang_str = f" `{lang}`" if lang else ""
+        cells.append(f"[{repo['name']}]({repo['html_url']}){lang_str}")
+        if len(cells) >= 9:
             break
-    return "\n".join(lines) if lines else "_No recent repos._"
+    if not cells:
+        return "_No recent repos._"
+    cols = 3
+    header = "| | | |\n| --- | --- | --- |"
+    rows = []
+    for i in range(0, len(cells), cols):
+        chunk = cells[i:i + cols]
+        while len(chunk) < cols:
+            chunk.append("")
+        rows.append("| " + " | ".join(chunk) + " |")
+    return header + "\n" + "\n".join(rows)
 
 
 def build_artsy_table(config):
