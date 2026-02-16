@@ -23,8 +23,8 @@ Makin' silly & frivolous stuff, usually with software.
 | --- | --- | --- | --- |
 | [Generative Art](https://www.bobbby.online/generative-art) | [Bezier Triangles](https://www.bobbby.online/bezier-triangles) | [Gay Chaos](https://www.bobbby.online/gay_chaos) | [A Me Museum](https://www.bobbby.online/museum) |
 | [Pong](https://www.bobbby.online/pong) | [Chaos Typing](https://www.bobbby.online/chaos-typing) | [Wordle](https://www.bobbby.online/wordle) | [Blackjack](https://www.bobbby.online/blackjack) |
-| [War](https://www.bobbby.online/war) | [Nathan Fielder AI](https://www.bobbby.online/nathan) | [Lumon Celebration](https://www.bobbby.online/lumon-celebration) | [Stumble](https://www.bobbby.online/stumble) |
-| [Mirror](https://www.bobbby.online/mirror) | [Rainbow](https://www.bobbby.online/gay_chaos) | [Smart Steps](https://www.bobbby.online/smart-steps) | [Markdown Editor](https://www.bobbby.online/markdown-editor) |
+| [War](https://www.bobbby.online/war) | [Nathan Fielder Character Analysis](https://www.bobbby.online/nathan) | [Lumon Celebration](https://www.bobbby.online/lumon-celebration) | [Stumble](https://www.bobbby.online/stumble) |
+| [Mirror](https://www.bobbby.online/mirror) | [Rainbow](https://www.bobbby.online/gay_chaos) | [Markdown Editor](https://www.bobbby.online/markdown-editor) |  |
 <!-- artsy ends -->
 
 ## Recent Blog Posts
