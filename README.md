@@ -6,13 +6,23 @@ Makin' silly & frivolous stuff, usually with software.
 
 ---
 
+<!-- hero starts -->
+## [deciduous](https://github.com/notactuallytreyanastasio/deciduous) `HTML` :star: 86
+
+Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer.
+<!-- hero ends -->
+
+## Tech Threads (Bluesky)
+<!-- bluesky starts -->
+_No tech threads yet. Posts with a computer emoji will appear here._
+<!-- bluesky ends -->
+
 ## Featured Projects
 <!-- featured starts -->
 | Project | Description |
 | --- | --- |
 | [**bobby_posts**](https://github.com/notactuallytreyanastasio/bobby_posts) `Elixir` &nbsp; :star: 1 | Generate posts in my voice using pure Elixir Qwen3-8B-4bit inference on Apple Silicon. Part of a bigger ecosystem: [bumblebee_quantized](https://github.com/notactuallytreyanastasio/bumblebee_quantized) (4-bit LLM inference), [safetensors_ex](https://github.com/notactuallytreyanastasio/safetensors_ex) (model weight parser), [bobby_posts_adapters](https://github.com/notactuallytreyanastasio/bobby_posts_adapters) (LoRA weights), [elixir_mlx_nif_qwen3](https://github.com/notactuallytreyanastasio/elixir_mlx_nif_qwen3) (MLX NIF bridge), and [bluesky_bot_python](https://github.com/notactuallytreyanastasio/bluesky_bot_python) (auto-poster) |
-| [**deciduous**](https://github.com/notactuallytreyanastasio/deciduous) `HTML` &nbsp; :star: 86 | Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer. |
-| [**blog**](https://github.com/notactuallytreyanastasio/blog) `Elixir` &nbsp; :star: 4 | My personal blog and absurd collection of toys at [bobbby.online](https://www.bobbby.online). Built with Phoenix LiveView. Home to generative art, multiplayer pong, a wordle clone, chaos typing, an AI Nathan Fielder, and way too many other things. |
+| [**genstage_tutorial_2025**](https://github.com/notactuallytreyanastasio/genstage_tutorial_2025) `Elixir` &nbsp; :star: 70 | A comprehensive GenStage tutorial and reference implementation in Elixir. Walks through building a real data processing pipeline from scratch. |
 | [**phstats**](https://github.com/notactuallytreyanastasio/phstats) `TypeScript` | Interactive Phish setlist statistics browser. Pulls data from phish.net, lets you explore jam charts, song frequency, and show history. Built with vanilla JS + GitHub Pages. |
 | [**archive_tv**](https://github.com/notactuallytreyanastasio/archive_tv) `TypeScript` &nbsp; :star: 1 | The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection. |
 <!-- featured ends -->
@@ -36,16 +46,11 @@ Makin' silly & frivolous stuff, usually with software.
 - [Lets Write Letters](https://www.bobbby.online/post/lets-write-letters)
 <!-- blog ends -->
 
-## Tech Threads (Bluesky)
-<!-- bluesky starts -->
-_No tech threads yet. Posts with a computer emoji will appear here._
-<!-- bluesky ends -->
-
 ## Recently Updated
 <!-- recent starts -->
+- [blog](https://github.com/notactuallytreyanastasio/blog) - my blog `Elixir`
 - [temper_rust_bug_maybe](https://github.com/notactuallytreyanastasio/temper_rust_bug_maybe)
 - [safe_httpeex](https://github.com/notactuallytreyanastasio/safe_httpeex) `Shell`
 - [rooted_in_good](https://github.com/notactuallytreyanastasio/rooted_in_good) - The Rooted in Good Method - Transform your relationship with your child through 3 simple daily touchpoints `TypeScript`
 - [live_draft_lsp](https://github.com/notactuallytreyanastasio/live_draft_lsp) - Elixir LSP that streams markdown to your Phoenix blog as you type in Zed `Elixir`
-- [zed-live-draft](https://github.com/notactuallytreyanastasio/zed-live-draft) - Zed extension for live-streaming blog posts from your editor to Phoenix `Rust`
 <!-- recent ends -->

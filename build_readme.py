@@ -21,6 +21,25 @@ def github_headers():
     return headers
 
 
+def fetch_hero_repo(config):
+    hero = config.get("hero_repo")
+    if not hero:
+        return ""
+    name = hero["name"]
+    blurb = hero.get("blurb", "")
+    r = requests.get(f"{GITHUB_API}/repos/{config['github_username']}/{name}", headers=github_headers())
+    stars = 0
+    lang = ""
+    if r.status_code == 200:
+        data = r.json()
+        stars = data.get("stargazers_count", 0)
+        lang = data.get("language") or ""
+    url = f"https://github.com/{config['github_username']}/{name}"
+    star_badge = f" :star: {stars}" if stars > 0 else ""
+    lang_str = f" `{lang}`" if lang else ""
+    return f"## [{name}]({url}){lang_str}{star_badge}\n\n{blurb}"
+
+
 def fetch_featured_repos(config):
     rows = []
     for repo in config["featured_repos"]:
@@ -144,6 +163,9 @@ def fetch_bluesky_threads(config):
 
 def fetch_recent_repos(config):
     featured_names = {r["name"] for r in config["featured_repos"]}
+    hero = config.get("hero_repo")
+    if hero:
+        featured_names.add(hero["name"])
     r = requests.get(
         f"{GITHUB_API}/users/{config['github_username']}/repos",
         params={"sort": "pushed", "per_page": 30, "type": "owner"},
@@ -186,6 +208,7 @@ def build_artsy_table(config):
 
 
 def build_readme(config):
+    hero = fetch_hero_repo(config)
     featured = fetch_featured_repos(config)
     artsy = build_artsy_table(config)
     blog = fetch_blog_posts(config)
@@ -203,6 +226,15 @@ Makin' silly & frivolous stuff, usually with software.
 
 ---
 
+<!-- hero starts -->
+{hero}
+<!-- hero ends -->
+
+## Tech Threads (Bluesky)
+<!-- bluesky starts -->
+{bluesky}
+<!-- bluesky ends -->
+
 ## Featured Projects
 <!-- featured starts -->
 {featured}
@@ -217,11 +249,6 @@ Makin' silly & frivolous stuff, usually with software.
 <!-- blog starts -->
 {blog}
 <!-- blog ends -->
-
-## Tech Threads (Bluesky)
-<!-- bluesky starts -->
-{bluesky}
-<!-- bluesky ends -->
 
 ## Recently Updated
 <!-- recent starts -->
