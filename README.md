@@ -8,23 +8,32 @@ Makin' silly & frivolous stuff, usually with software.
 
 ## Featured Projects
 <!-- featured starts -->
-- [deciduous](https://github.com/notactuallytreyanastasio/deciduous) - Decision graph tooling for AI-assisted development - track every choice, query your reasoning (86 stars)
-- [blog](https://github.com/notactuallytreyanastasio/blog) - My personal blog & creative playground - built with Phoenix LiveView (4 stars)
-- [phstats](https://github.com/notactuallytreyanastasio/phstats)
+| Project | Description |
+| --- | --- |
+| [**bobby_posts**](https://github.com/notactuallytreyanastasio/bobby_posts) `Elixir` &nbsp; :star: 1 | Generate posts in my voice using pure Elixir Qwen3-8B-4bit inference on Apple Silicon. Part of a bigger ecosystem: [bumblebee_quantized](https://github.com/notactuallytreyanastasio/bumblebee_quantized) (4-bit LLM inference), [safetensors_ex](https://github.com/notactuallytreyanastasio/safetensors_ex) (model weight parser), [bobby_posts_adapters](https://github.com/notactuallytreyanastasio/bobby_posts_adapters) (LoRA weights), [elixir_mlx_nif_qwen3](https://github.com/notactuallytreyanastasio/elixir_mlx_nif_qwen3) (MLX NIF bridge), and [bluesky_bot_python](https://github.com/notactuallytreyanastasio/bluesky_bot_python) (auto-poster) |
+| [**deciduous**](https://github.com/notactuallytreyanastasio/deciduous) `HTML` &nbsp; :star: 86 | Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer. |
+| [**blog**](https://github.com/notactuallytreyanastasio/blog) `Elixir` &nbsp; :star: 4 | My personal blog and absurd collection of toys at [bobbby.online](https://www.bobbby.online). Built with Phoenix LiveView. Home to generative art, multiplayer pong, a wordle clone, chaos typing, an AI Nathan Fielder, and way too many other things. |
+| [**phstats**](https://github.com/notactuallytreyanastasio/phstats) `TypeScript` | Interactive Phish setlist statistics browser. Pulls data from phish.net, lets you explore jam charts, song frequency, and show history. Built with vanilla JS + GitHub Pages. |
+| [**archive_tv**](https://github.com/notactuallytreyanastasio/archive_tv) `TypeScript` &nbsp; :star: 1 | The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection. |
 <!-- featured ends -->
 
-## Artsy & Weird Things I've Built
+## Artsy & Weird Things I'm Making Now, Check Out the READMEs
 <!-- artsy starts -->
-- [Pong](https://www.bobbby.online/pong)
-- [Chaos Typing](https://www.bobbby.online/chaos-typing)
-- [Wordle](https://www.bobbby.online/wordle)
+| | | | |
+| --- | --- | --- | --- |
+| [Generative Art](https://www.bobbby.online/generative-art) | [Bezier Triangles](https://www.bobbby.online/bezier-triangles) | [Gay Chaos](https://www.bobbby.online/gay_chaos) | [A Me Museum](https://www.bobbby.online/museum) |
+| [Pong](https://www.bobbby.online/pong) | [Chaos Typing](https://www.bobbby.online/chaos-typing) | [Wordle](https://www.bobbby.online/wordle) | [Blackjack](https://www.bobbby.online/blackjack) |
+| [War](https://www.bobbby.online/war) | [Nathan Fielder AI](https://www.bobbby.online/nathan) | [Lumon Celebration](https://www.bobbby.online/lumon-celebration) | [Stumble](https://www.bobbby.online/stumble) |
+| [Mirror](https://www.bobbby.online/mirror) | [Rainbow](https://www.bobbby.online/gay_chaos) | [Smart Steps](https://www.bobbby.online/smart-steps) | [Markdown Editor](https://www.bobbby.online/markdown-editor) |
 <!-- artsy ends -->
 
 ## Recent Blog Posts
 <!-- blog starts -->
-- [327 Years Of Tree Law In The Usa ](https://www.bobbby.online/post/327-years-of-tree-law-in-the-usa-) (2025-06-16)
-- [A Genstage Tutorial And Reflection](https://www.bobbby.online/post/a-genstage-tutorial-and-reflection) (2025-06-01)
-- [Nathan Fielder](https://www.bobbby.online/post/nathan-fielder) (2025-05-28)
+- [327 Years Of Tree Law In The Usa ](https://www.bobbby.online/post/327-years-of-tree-law-in-the-usa-)
+- [A Genstage Tutorial And Reflection](https://www.bobbby.online/post/a-genstage-tutorial-and-reflection)
+- [Nathan Fielder](https://www.bobbby.online/post/nathan-fielder)
+- [A Quick Typewriter Set Letter Project](https://www.bobbby.online/post/a-quick-typewriter-set-letter-project)
+- [Lets Write Letters](https://www.bobbby.online/post/lets-write-letters)
 <!-- blog ends -->
 
 ## Tech Threads (Bluesky)
@@ -36,6 +45,7 @@ _No tech threads yet. Posts with a computer emoji will appear here._
 <!-- recent starts -->
 - [temper_rust_bug_maybe](https://github.com/notactuallytreyanastasio/temper_rust_bug_maybe)
 - [safe_httpeex](https://github.com/notactuallytreyanastasio/safe_httpeex) `Shell`
+- [rooted_in_good](https://github.com/notactuallytreyanastasio/rooted_in_good) - The Rooted in Good Method - Transform your relationship with your child through 3 simple daily touchpoints `TypeScript`
 - [live_draft_lsp](https://github.com/notactuallytreyanastasio/live_draft_lsp) - Elixir LSP that streams markdown to your Phoenix blog as you type in Zed `Elixir`
 - [zed-live-draft](https://github.com/notactuallytreyanastasio/zed-live-draft) - Zed extension for live-streaming blog posts from your editor to Phoenix `Rust`
 <!-- recent ends -->

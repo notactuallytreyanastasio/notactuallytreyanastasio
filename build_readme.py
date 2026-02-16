@@ -22,23 +22,44 @@ def github_headers():
 
 
 def fetch_featured_repos(config):
-    lines = []
+    rows = []
     for repo in config["featured_repos"]:
         name = repo["name"]
+        blurb = repo.get("blurb", "")
         r = requests.get(f"{GITHUB_API}/repos/{config['github_username']}/{name}", headers=github_headers())
-        if r.status_code != 200:
-            continue
-        data = r.json()
-        desc = repo.get("description_override") or data.get("description") or ""
-        stars = data.get("stargazers_count", 0)
-        url = data.get("html_url", f"https://github.com/{config['github_username']}/{name}")
-        star_str = f" ({stars} stars)" if stars > 0 else ""
-        desc_str = f" - {desc}" if desc else ""
-        lines.append(f"- [{name}]({url}){desc_str}{star_str}")
-    return "\n".join(lines)
+        stars = 0
+        lang = ""
+        if r.status_code == 200:
+            data = r.json()
+            stars = data.get("stargazers_count", 0)
+            lang = data.get("language") or ""
+        url = f"https://github.com/{config['github_username']}/{name}"
+        lang_str = f" `{lang}`" if lang else ""
+        star_badge = f" &nbsp; :star: {stars}" if stars > 0 else ""
+        rows.append(f"| [**{name}**]({url}){lang_str}{star_badge} | {blurb} |")
+    header = "| Project | Description |\n| --- | --- |"
+    return header + "\n" + "\n".join(rows)
+
+
+def fetch_blog_allowed_slugs(config):
+    """Fetch the allowed_slugs list from the blog's post.ex source."""
+    r = requests.get(
+        f"{GITHUB_API}/repos/{config['blog_repo']}/contents/lib/blog/content/post.ex",
+        headers=github_headers(),
+    )
+    if r.status_code != 200:
+        return None
+    import base64
+    content = base64.b64decode(r.json()["content"]).decode()
+    m = re.search(r'@allowed_slugs ~w\((.*?)\)', content, re.DOTALL)
+    if not m:
+        return None
+    return set(m.group(1).split())
 
 
 def fetch_blog_posts(config):
+    allowed = fetch_blog_allowed_slugs(config)
+
     r = requests.get(
         f"{GITHUB_API}/repos/{config['blog_repo']}/contents/priv/static/posts",
         headers=github_headers(),
@@ -47,14 +68,13 @@ def fetch_blog_posts(config):
         return "_Could not fetch blog posts._"
 
     files = r.json()
-    # Filter out hash-suffixed cache files
     posts = []
     for f in files:
         name = f["name"]
         if not name.endswith(".md"):
             continue
         stem = name[:-3]
-        # Hash files end with a 32-char hex string
+        # Skip hash-suffixed cache files
         parts = stem.rsplit("-", 1)
         if len(parts) == 2 and re.match(r"^[0-9a-f]{32}$", parts[1]):
             continue
@@ -63,14 +83,16 @@ def fetch_blog_posts(config):
         if m:
             date_str = m.group(1)
             slug = m.group(2)
+            if allowed is not None and slug not in allowed:
+                continue
             posts.append((date_str, slug))
 
     posts.sort(key=lambda x: x[0], reverse=True)
     lines = []
-    for date_str, slug in posts[:5]:
+    for _, slug in posts[:5]:
         title = slug.replace("-", " ").title()
         url = f"{config['blog_base_url']}/post/{slug}"
-        lines.append(f"- [{title}]({url}) ({date_str})")
+        lines.append(f"- [{title}]({url})")
     return "\n".join(lines) if lines else "_No blog posts found._"
 
 
@@ -97,7 +119,6 @@ def fetch_bluesky_threads(config):
 
         for item in feed:
             post = item.get("post", {})
-            # Skip reposts
             if post.get("author", {}).get("did") != did:
                 continue
             record = post.get("record", {})
@@ -137,6 +158,8 @@ def fetch_recent_repos(config):
             continue
         if repo["name"] in featured_names:
             continue
+        if repo["name"] == config["github_username"]:
+            continue
         desc = repo.get("description") or ""
         lang = repo.get("language") or ""
         suffix = f" `{lang}`" if lang else ""
@@ -147,16 +170,24 @@ def fetch_recent_repos(config):
     return "\n".join(lines) if lines else "_No recent repos._"
 
 
-def build_artsy_section(config):
-    lines = []
-    for proj in config.get("artsy_projects", []):
-        lines.append(f"- [{proj['label']}]({proj['url']})")
-    return "\n".join(lines)
+def build_artsy_table(config):
+    projects = config.get("artsy_projects", [])
+    # Build a 4-column table
+    cols = 4
+    header = "| | | | |\n| --- | --- | --- | --- |"
+    rows = []
+    for i in range(0, len(projects), cols):
+        chunk = projects[i:i + cols]
+        cells = [f"[{p['label']}]({p['url']})" for p in chunk]
+        while len(cells) < cols:
+            cells.append("")
+        rows.append("| " + " | ".join(cells) + " |")
+    return header + "\n" + "\n".join(rows)
 
 
 def build_readme(config):
     featured = fetch_featured_repos(config)
-    artsy = build_artsy_section(config)
+    artsy = build_artsy_table(config)
     blog = fetch_blog_posts(config)
     bluesky = fetch_bluesky_threads(config)
     recent = fetch_recent_repos(config)
@@ -177,7 +208,7 @@ Makin' silly & frivolous stuff, usually with software.
 {featured}
 <!-- featured ends -->
 
-## Artsy & Weird Things I've Built
+## Artsy & Weird Things I'm Making Now, Check Out the READMEs
 <!-- artsy starts -->
 {artsy}
 <!-- artsy ends -->

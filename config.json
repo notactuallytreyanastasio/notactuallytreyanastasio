@@ -1,8 +1,25 @@
 {
   "featured_repos": [
-    {"name": "deciduous", "description_override": null},
-    {"name": "blog", "description_override": "My personal blog & creative playground - built with Phoenix LiveView"},
-    {"name": "phstats", "description_override": null}
+    {
+      "name": "bobby_posts",
+      "blurb": "Generate posts in my voice using pure Elixir Qwen3-8B-4bit inference on Apple Silicon. Part of a bigger ecosystem: [bumblebee_quantized](https://github.com/notactuallytreyanastasio/bumblebee_quantized) (4-bit LLM inference), [safetensors_ex](https://github.com/notactuallytreyanastasio/safetensors_ex) (model weight parser), [bobby_posts_adapters](https://github.com/notactuallytreyanastasio/bobby_posts_adapters) (LoRA weights), [elixir_mlx_nif_qwen3](https://github.com/notactuallytreyanastasio/elixir_mlx_nif_qwen3) (MLX NIF bridge), and [bluesky_bot_python](https://github.com/notactuallytreyanastasio/bluesky_bot_python) (auto-poster)"
+    },
+    {
+      "name": "deciduous",
+      "blurb": "Decision graph tooling for AI-assisted development. Track every choice, query your reasoning, and visualize your decision history as an interactive graph. Ships as a single binary with a built-in TUI and web viewer."
+    },
+    {
+      "name": "blog",
+      "blurb": "My personal blog and absurd collection of toys at [bobbby.online](https://www.bobbby.online). Built with Phoenix LiveView. Home to generative art, multiplayer pong, a wordle clone, chaos typing, an AI Nathan Fielder, and way too many other things."
+    },
+    {
+      "name": "phstats",
+      "blurb": "Interactive Phish setlist statistics browser. Pulls data from phish.net, lets you explore jam charts, song frequency, and show history. Built with vanilla JS + GitHub Pages."
+    },
+    {
+      "name": "archive_tv",
+      "blurb": "The Mark Pines Magnetic Media Archive - a streaming platform for digitized VHS tapes, local TV broadcasts, and other found media from the collection."
+    }
   ],
   "artsy_projects": [
     {"label": "Generative Art", "url": "https://www.bobbby.online/generative-art"},
@@ -11,7 +28,16 @@
     {"label": "A Me Museum", "url": "https://www.bobbby.online/museum"},
     {"label": "Pong", "url": "https://www.bobbby.online/pong"},
     {"label": "Chaos Typing", "url": "https://www.bobbby.online/chaos-typing"},
-    {"label": "Wordle", "url": "https://www.bobbby.online/wordle"}
+    {"label": "Wordle", "url": "https://www.bobbby.online/wordle"},
+    {"label": "Blackjack", "url": "https://www.bobbby.online/blackjack"},
+    {"label": "War", "url": "https://www.bobbby.online/war"},
+    {"label": "Nathan Fielder AI", "url": "https://www.bobbby.online/nathan"},
+    {"label": "Lumon Celebration", "url": "https://www.bobbby.online/lumon-celebration"},
+    {"label": "Stumble", "url": "https://www.bobbby.online/stumble"},
+    {"label": "Mirror", "url": "https://www.bobbby.online/mirror"},
+    {"label": "Rainbow", "url": "https://www.bobbby.online/gay_chaos"},
+    {"label": "Smart Steps", "url": "https://www.bobbby.online/smart-steps"},
+    {"label": "Markdown Editor", "url": "https://www.bobbby.online/markdown-editor"}
   ],
   "bluesky_did": "did:plc:6e6n5nhhy7s2zqr7wx4s6p52",
   "bluesky_handle": "bobbby.online",
